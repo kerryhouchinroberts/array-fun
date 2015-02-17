@@ -45,6 +45,11 @@ end
 
 
 def celebrities_with_long_names(celebs)
+  c = celebs.map {|celeb|
+    if celeb.length > 5
+      true
+    else false
+      end}
 
 end
 
