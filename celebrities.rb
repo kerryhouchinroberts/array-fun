@@ -22,7 +22,7 @@ end
 
 
 def first_three_celebrities_with_each(celebs)
-  celebs.each {|celeb| print celeb}.first(3)
+  celebs.each {|celeb| celeb}.first(3)
 end
 
 
@@ -39,7 +39,8 @@ end
 
 
 def sum_of_all_celebrity_name_lengths(celebs)
-
+  c = celebs.each.map {|celeb| celeb.length}
+    c.inject {|sum, i|  sum + i }
 end
 
 
